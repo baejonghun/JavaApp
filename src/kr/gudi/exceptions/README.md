@@ -1,12 +1,21 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 예외 처리(Exception)
-### 
 <pre>
   <code>
-	 
+	프로그램에서 강제 종료 되는 오류가 발생할 확률을 줄이기 위하여 처리하는 방법
+	종류 : try문, throw문
   </code>
 </pre>
+
+### Exception 객체 종류
+<img src="../../../images/Exception_1.png" width="1128" height="301"></img>
+
+### try문
+<img src="../../../images/Exception_2.png" width="709" height="429"></img>
+
+### throw문
+<img src="../../../images/Exception_3.png" width="940" height="298"></img>
 
 
 ----
