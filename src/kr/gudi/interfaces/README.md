@@ -1,12 +1,14 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 인터페이스(Interface)
-### 
 <pre>
   <code>
-	 
+	인터페이스는 추상적인 개념을 말하는 것이며 상수와 추상 메소드를 정의 할 수 있다.
+	추상 클래스와 달리 구체적인 코드는 없으며 상속 받은 클래스에서 추상 메소드를  구성해야 한다.
+	하나의 클래스에서 여러개의 인터페이스를 구현 할 수 있다.
   </code>
 </pre>
+<img src="../../../images/Interface.png" width="865" height="837"></img>
 
 
 ----
