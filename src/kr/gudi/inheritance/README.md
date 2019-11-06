@@ -1,12 +1,20 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 상속(Inheritance)
-### 
 <pre>
   <code>
-	 
+	상속이란 객체지향 언어에서 다형성(Polymorphism)을 구현 하기 위한 방법이다.
+	이미 구성된 클래스의 기능을 그대로 사용 하거나 부분적으로 재구성 하여 재사용성을 극대화시킨다.
+	부모 클래스는 추상(abstract) 메소드를 만들고 자식 클래스에서 구체적인 코드를 만들 수 있다.
   </code>
 </pre>
+> * [다형성](https://ko.wikipedia.org/wiki/%EB%8B%A4%ED%98%95%EC%84%B1_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99))
+
+### 생성자로 사용할 경우
+<img src="../../../images/Inheritance_1.png" width="777" height="714"></img>
+
+### 상속으로 사용할 경우
+<img src="../../../images/Inheritance_2.png" width="799" height="688"></img>
 
 
 ----
