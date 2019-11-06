@@ -13,7 +13,7 @@
 <img src="../../../images/Abstract_1.png" width="480" height="181"></img>
 
 ### 추상 메소드
-<img src="../../../images/Abstract_2.png" width="482" height="377"></img>
+<img src="../../../images/Abstract_3.png" width="482" height="377"></img>
 
 
 ----
