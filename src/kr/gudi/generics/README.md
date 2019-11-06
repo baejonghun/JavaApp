@@ -1,12 +1,12 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 제네릭(Generic)
-### 
 <pre>
   <code>
-	 
+	클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 방법을 말한다.	
   </code>
 </pre>
+<img src="../../../images/Generic.png" width="860" height="661"></img> 
 
 
 ----
