@@ -1,12 +1,15 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 참조(Reference)
-### 
 <pre>
   <code>
-	 
+	객체(Object)를 복제 하여 사용 하는 방법
+	참조 변수에서 값으로 사용되는 힙 영역(Heap area) 저장 주소값을 동일하게 사용한다.
   </code>
 </pre>
+
+### 참조와 복제
+<img src="../../../images/Reference.png" width="689" height="338"></img> 
 
 
 ----
