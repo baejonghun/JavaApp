@@ -1,12 +1,24 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 컬렉션(Collection)
-### 
 <pre>
   <code>
-	 
+	배열의 크기를 정의 하지 않고 배열을 구현 할 수 있도록 하는 자료구조를 말한다.
+	자료구조(Data Structure)는 어떤 정보를 담는 것을 의미한다.
+	여러 데이터를 담기 위한 방법이며 배열이 가장 기본적인 자료구조이다.
   </code>
 </pre>
+
+### 자바에서의 자료구조 유형
+<pre>
+  <code>
+	순서가 있는 목록인 List형
+	순서가 중요하지 않은 목록인 Set형
+	먼저 들어온 것이 먼저 나가는 Queue형
+	Key-Value의 형태로 저장되는 Map형
+  </code>
+</pre>
+<img src="../../../images/Collection.png" width="837" height="555"></img>
 
 
 ----
