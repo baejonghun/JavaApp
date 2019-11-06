@@ -1,12 +1,19 @@
 <img src="../../../images/Untitled-1.jpg" width="189" height="80"></img>
 
 # 추상(Abstract)
-### 
 <pre>
   <code>
-	 
+	추상은 상속을 강제하는 일종의 규제라고 할 수 있다.
+	추상 클래스나 추상 메소드를 사용하기 위해서는 반드시 상속이 필요하다.
+	추상이란 구체적인 코드가 있지 않고 선언만 되어 있는 것을 말한다. 
   </code>
 </pre>
+
+### 추상 클래스
+<img src="../../../images/Abstract_1.png" width="480" height="181"></img>
+
+### 추상 메소드
+<img src="../../../images/Abstract_2.png" width="482" height="377"></img>
 
 
 ----
