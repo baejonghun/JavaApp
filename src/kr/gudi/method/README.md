@@ -15,7 +15,7 @@
 ### 리턴타입이 필요없을 경우 (void) 
 <img src="../../../images/Method_2.png" width="542" height="143"></img>
 
-### 리턴타일이 필요한 경우 (자료형)
+### 리턴타입이 필요한 경우 (자료형)
 <img src="../../../images/Method_3.png" width="542" height="154"></img>
 
 ### 매개변수가 필요한 경우 (변수 선언)
