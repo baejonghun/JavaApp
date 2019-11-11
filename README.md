@@ -1,5 +1,5 @@
 <img src="./src/images/Untitled-1.jpg" width="189" height="80"></img>
-------------------------------------------------------------------
+
 # JavaApp
 Japa Project 
 ### 참조 자료 링크
