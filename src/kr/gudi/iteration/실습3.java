@@ -6,13 +6,15 @@ public class 실습3 {
 		
 		for(int a = 1; a < 10; a++) { // 1 ~ 9
 			
+			int b = 1;
+			while(b < 10) { // 1 ~ 9
+				System.out.println(a + " * " + b + " = " + (a * b));
+				b++;
+			}
+			
 		}
 		
-		int b = 1;
-		while(b < 10) { // 1 ~ 9
-			
-			b++;
-		}
+		
 		
 	}
 
