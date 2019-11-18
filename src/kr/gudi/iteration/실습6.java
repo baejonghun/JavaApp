@@ -10,7 +10,7 @@ public class 실습6 {
 		for(int i = 0; i < (배열.length - 1); i++) {
 			int m = i;
 			for(int j = (i + 1); j < 배열.length; j++) {
-				if(배열[m] < 배열[j]) {
+				if(배열[m] > 배열[j]) {
 					m = j;
 				}
 			}
