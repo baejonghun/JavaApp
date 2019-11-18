@@ -7,14 +7,27 @@ public class 실습7 {
 	static int 행;
 
 	public static void main(String[] args) {
-		
-		Scanner scan = new Scanner(System.in);
-		행 = scan.nextInt();
-		
+//		Scanner scan = new Scanner(System.in);
+		시작(new Scanner(System.in));
+	}
+	
+	static void 시작(Scanner scan) {
+		while(true) {
+			System.out.println("구구단 출력 행 수 입력하세요.");
+			행 = scan.nextInt();
+			if(행 == 0) {
+				break;
+			}
+			구구단();
+			System.out.println("------------------------------");
+		}
+		scan.close();
+	}
+	
+	static void 구구단() {
 		for(int 단 = 1; 단 < 10 ; 단 += 행) {
 			수(단);
 		}
-		
 	}
 	
 	static void 수(int 단) {
