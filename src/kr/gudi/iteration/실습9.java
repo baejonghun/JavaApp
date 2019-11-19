@@ -8,11 +8,11 @@ public class 실습9 {
 			System.out.print(i + "\t");
 			for(int j = 1; j < 20; j++) {
 				if(i <= 10 && j > (10 - i) && j < (10 + i)) {
-					System.out.print("X");
-				} else if(i > 10 && j > (i - 10) && j < 20 - (i - 10)) {
-					System.out.print("X");
-				} else {
 					System.out.print("O");
+				} else if(i > 10 && j > (i - 10) && j < 20 - (i - 10)) {
+					System.out.print("O");
+				} else {
+					System.out.print("X");
 				}
 			}
 			System.out.println("");			
