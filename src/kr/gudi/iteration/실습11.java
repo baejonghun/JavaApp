@@ -1,6 +1,6 @@
 package kr.gudi.iteration;
 
-public class 실습10 
+public class 실습11 
 {
 
 	public static void main(String[] args) 
@@ -11,7 +11,7 @@ public class 실습10
 			System.out.print(i+"\t");
 			for(int j = 1; j <= 9; j++) 
 			{
-				if(i%2 == 0 && (j >= 2 && j <= 8)) 
+				if(i%2 == 0 && j%2 == 0) 
 				{
 					System.out.print("O");
 				} 
@@ -22,7 +22,7 @@ public class 실습10
 			}
 			System.out.println("");
 		}
-		
+	
 	}
 
 }
