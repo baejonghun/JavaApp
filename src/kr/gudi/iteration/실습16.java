@@ -70,6 +70,8 @@ public class 실습16 {
 					break;
 			}
 			
+			scan.close();
+			
 		}
 		
 	}
