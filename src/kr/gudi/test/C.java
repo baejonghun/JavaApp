@@ -1,8 +1,10 @@
 package kr.gudi.test;
 
-public class C extends B {
+public class C implements I {
 
-	void run() {
+	@Override
+	public void run() {
+		System.out.println("C > 추상 메소드 구성");
 	}
 	
 }
