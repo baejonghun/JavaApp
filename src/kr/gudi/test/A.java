@@ -1,22 +1,19 @@
 package kr.gudi.test;
 
-public class A extends B {
+import java.util.ArrayList;
+import java.util.List;
 
-	void run() {
-		System.out.println("A");
-		System.out.println(c);
-		c = 5;
-		System.out.println(c);
-		System.out.println(super.c);
-		
-//		System.out.println(super.toString());
-//		System.out.println(toString());
-		
+public class A extends B implements I, II {
+	
+	@Override
+	public void run() {
+		System.out.println("추상 메소드 구성");
+		List list = new ArrayList();
 	}
 
 	@Override
-	public String toString() {
-		return "A [c=" + c + "]";
+	public void run2() {
+		System.out.println("두번째 run()");
 	}
 	
 }

@@ -1,20 +1,12 @@
 package kr.gudi.test;
 
-public class B {
-	private int a;
-	private int b;
-	int c = 3;
-	
-	B(){}
-	
-	B(int a, int b){
-		this.a = a;
-		this.b = b;
+public abstract class B {
+	int a;
+	final int b = 0;
+	void test() {
+		System.out.println("B에 test() 호출");
 	}
-
-	@Override
-	public String toString() {
-		return "B [a=" + a + ", b=" + b + "]";
-	}
+	
+	abstract void run();
 	
 }
