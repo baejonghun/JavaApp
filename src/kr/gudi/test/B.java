@@ -5,6 +5,8 @@ public class B {
 	private int b;
 	int c = 3;
 	
+	B(){}
+	
 	B(int a, int b){
 		this.a = a;
 		this.b = b;

@@ -1,15 +1,22 @@
 package kr.gudi.test;
 
-public class A {
+public class A extends B {
 
-	public static void main(String[] a) {
+	void run() {
+		System.out.println("A");
+		System.out.println(c);
+		c = 5;
+		System.out.println(c);
+		System.out.println(super.c);
 		
-		Object o = new B(4,2);
+//		System.out.println(super.toString());
+//		System.out.println(toString());
 		
-		B  b = (B) o;
-		
-		System.out.println(b.c);
-		
+	}
+
+	@Override
+	public String toString() {
+		return "A [c=" + c + "]";
 	}
 	
 }
