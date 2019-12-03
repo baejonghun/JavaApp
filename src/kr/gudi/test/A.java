@@ -1,15 +1,20 @@
 package kr.gudi.test;
 
-public class A implements I, II {
+public class A {
 	
-	@Override
-	public void run() {
-		System.out.println("A > I 추상 메소드 구성");
+	private String a;
+
+	public String getA() {
+		return a;
+	}
+
+	public void setA(String a) {
+		this.a = a;
 	}
 
 	@Override
-	public void run2() {
-		System.out.println("A > II 추상 메소드 구성");		
+	public String toString() {
+		return "A [a=" + a + "]";
 	}
 	
 }
