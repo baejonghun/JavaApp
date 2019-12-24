@@ -2,50 +2,67 @@ package kr.gudi.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DB {
 	
 	private Connection conn;
 	private boolean status;
+	private final String URL = "jdbc:mariadb://mariadb:3306/gdj21";
+	private final String ID = "gdj21";
+	private final String PWD = "1234";
 	
-	public void 접속() {
-		String url = "jdbc:mariadb://mariadb:3306/gdj21";
-		String id = "gdj21";
-		String pwd = "1234";
-		
+	public Connection 접속() {		
 		try {
-			System.out.println("드라이버 확인");
 			Class.forName("org.mariadb.jdbc.Driver");
-			System.out.println("드라이버 있음");
-			
-			conn = DriverManager.getConnection(url, id, pwd);
-			System.out.println("연결 객체 생성");
+			return DriverManager.getConnection(URL, ID, PWD);
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("드라이버 없음");
 		}
-		
+		return null;
 	}
 	
-	public void 실행() {
-		String sql = "SELECT num FROM test";
+	public List<Integer> 실행(String sql) {
+		List<Integer> arr = new ArrayList<Integer>();
 		try {
-			System.out.println("실행 시작");
-			Statement stat = conn.createStatement();
-			System.out.println(sql);
-			status = stat.execute(sql);
-			System.out.println("실행 종료");
+			conn = 접속();
+			if(conn != null) {
+				Statement stat = conn.createStatement();
+				status = stat.execute(sql);
+				ResultSet rs = stat.executeQuery(sql);
+				
+				while(rs.next()) {
+					int num = rs.getInt(1);
+					arr.add(num);
+				}
+				rs.close();
+				stat.close();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 		
+		return arr;
 	}
 	
-	public void 결과() {
+	public void 결과(List<Integer> result) {
 		if(status) {
 			System.out.println("성공");
+			
+			for(int i = 0; i < result.size(); i++) {
+				System.out.println(result.get(i));
+			}
+			
 		} else {
 			System.out.println("실패");
 		}
